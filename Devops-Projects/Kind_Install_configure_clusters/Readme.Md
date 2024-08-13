@@ -1,2 +1,3 @@
-##create cluster
-kind create cluster --config=config.yml
+
+
+kind create cluster --name kubernets-practice --config kind-config.yaml
