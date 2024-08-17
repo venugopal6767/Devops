@@ -1,0 +1,21 @@
+# to taint a node 
+#  kubectl taint nodes <nodename> <key>=<value>:<effect>
+
+# to untaint a node 
+#  kubectl taint nodes <nodename> <key>=<value>:<effect>-
+
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: nginx
+  labels:
+    env: test
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+  tolerations:
+  - key: name
+    operator: Equal
+    value: ven
+    effect: NoSchedule
