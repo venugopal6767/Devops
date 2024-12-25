@@ -1,4 +1,4 @@
-# Define the AWS provider configuration.
+# Define the AWS provider configuration for testing
 provider "aws" {
   region = "us-east-1"  # Replace with your desired AWS region.
 }
